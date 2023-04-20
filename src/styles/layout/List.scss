@@ -1,0 +1,49 @@
+@import "../core/variables.scss";
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #0e1b24;
+  min-height: 65vh;
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 980px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 1300px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.errorMsg {
+  color: white;
+  font-family: "harry Potter";
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 50px;
+  @media (min-width: 700px) {
+    font-size: 35px;
+  }
+  @media (min-width: 1300px) {
+    font-size: 50px;
+  }
+  &__img {
+    width: 250px;
+    @media (min-width: 700px) {
+      width: 400px;
+    }
+    @media (min-width: 1300px) {
+      width: 600px;
+    }
+  }
+  &__container {
+    background-color: #0e1b24;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../core/variables.scss";
+
+.landing {
+  background-image: url("https://images8.alphacoders.com/110/1102284.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 83vh;
+  @media (min-width: 700px) {
+    min-height: 87vh;
+  }
+  &__btn {
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    border: solid 2px white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-family: "Harry potter";
+    font-size: 25px;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: $mainColor;
+      transform: scale(130%);
+    }
+    @media (min-width: 780px) {
+      font-size: 35px;
+      right: 35px;
+    }
+  }
+  &__audio {
+    color: red;
+    background-color: black;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-volume-xmark,
+.fa-volume-high {
+  color: white;
+  font-size: 20px;
+  margin: 25px 25px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(130%);
+  }
+  @media (min-width: 780px) {
+    font-size: 35px;
+  }
+}

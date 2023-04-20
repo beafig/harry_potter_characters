@@ -1,0 +1,132 @@
+@import "../core/variables.scss";
+
+.detail {
+  background-image: url("https://images8.alphacoders.com/110/1102284.jpg");
+  min-height: 88vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 700px) {
+    flex-direction: row-reverse;
+  }
+  &__btn {
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    border: solid 2px white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-family: "Harry potter";
+    font-size: 25px;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: $mainColor;
+      transform: scale(130%);
+    }
+  }
+
+  &__container {
+    min-width: 275px;
+    margin-top: 35px;
+    border: solid 2px white;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+    border-radius: 10%;
+    background-image: linear-gradient(#0e1b24, #767676);
+    padding: 15px;
+    @media (min-width: 900px) {
+      transform: scale(120%);
+    }
+    @media (min-width: 1200px) {
+      transform: scale(140%);
+    }
+  }
+  &__desc {
+    &--box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--img {
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+      border: solid 2px #0e1b24;
+      margin: 5px 10px 0 0;
+    }
+  }
+  &__house {
+    width: 140px;
+    @media (min-width: 700px) {
+      width: 200px;
+      margin-left: 30px;
+    }
+    @media (min-width: 900px) {
+      transform: scale(120%);
+      margin-left: 70px;
+    }
+    @media (min-width: 1200px) {
+      transform: scale(140%);
+      margin-left: 140px;
+    }
+  }
+  &__nickname {
+    color: white;
+    font-family: "Harry potter";
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+}
+
+.container__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--text {
+    font-family: "Harry potter";
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.5px;
+  }
+  &--icon {
+    margin-left: 15px;
+    margin-top: -10px;
+    height: 30px;
+  }
+}
+
+.container__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: $fasthand;
+  letter-spacing: 2px;
+  &--act {
+    margin-top: 10px;
+  }
+  &--gender {
+    margin-top: 10px;
+  }
+}
+
+.container__data {
+  display: flex;
+  align-items: center;
+  &--logo {
+    width: 30px;
+    margin-left: 10px;
+  }
+}
+
+.hidden {
+  display: none;
+}

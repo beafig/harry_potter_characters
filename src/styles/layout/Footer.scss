@@ -1,0 +1,47 @@
+@import "../core/variables.scss";
+
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 2px white;
+  height: 17vh;
+  @media (min-width: 700px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 13vh;
+  }
+  &__text {
+    color: white;
+    margin-top: 5px;
+    font-family: $fasthand;
+    letter-spacing: 1.5px;
+    @media (min-width: 700px) {
+      font-size: 20px;
+    }
+  }
+  &__logo {
+    height: 65px;
+    @media (min-width: 700px) {
+      height: 80px;
+    }
+  }
+  &__container {
+    display: flex;
+  }
+}
+
+.fa-brands {
+  color: white;
+  margin: 5px 0 0 10px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(140%);
+  }
+  @media (min-width: 700px) {
+    font-size: 20px;
+  }
+}
